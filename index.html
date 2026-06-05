@@ -93,7 +93,7 @@
 
     <div class="charts-grid">
         <div class="chart-card">
-            <div class="chart-title"><i class="fa-regular fa-chart-bar"></i> Promedio por Psicólogo</div>
+            <div class="chart-title"><i class="fa-regular fa-chart-bar"></i> Promedio por Área</div>
             <div class="chart-container"><canvas id="promedioPsicologoChart"></canvas></div>
         </div>
         <div class="chart-card">
@@ -344,7 +344,7 @@
     function renderTable() {
         const thead = document.getElementById('tableHeader');
         const tbody = document.getElementById('tableBody');
-        const cols = ['Psicólogo', 'Plana', 'Docente', 'Sede', 'Turno', 'Tipo Grado', 'Grado', 'Curso', 'Aula', 'P1', 'P2', 'P3', 'P4', 'Promedio', 'Nivel'];
+        const cols = ['Área', 'Plana', 'Docente', 'Sede', 'Turno', 'Tipo Grado', 'Grado', 'Curso', 'Aula', 'P1', 'P2', 'P3', 'P4', 'Promedio', 'Nivel'];
         thead.innerHTML = '<tr>' + cols.map(c => `<th>${c}</th>`).join('') + '</tr>';
         
         document.getElementById('totalRegistros').innerText = filteredData.length;
