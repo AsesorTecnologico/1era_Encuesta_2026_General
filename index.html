@@ -274,7 +274,7 @@
             const current = document.getElementById(selects[i]).value;
             const values = getAvailableValues(fields[i], fields[i]);
             const select = document.getElementById(selects[i]);
-            select.innerHTML = `<option value="__ALL__">Todos${fields[i] === 'psicologo' ? ' los psicólogos' : fields[i] === 'plana' ? ' las planas' : ''}</option>` + values.map(v => `<option value="${escapeHtml(v)}">${v}</option>`).join('');
+            select.innerHTML = `<option value="__ALL__">Todos${fields[i] === 'psicologo' ? ' las áreas' : fields[i] === 'plana' ? ' las planas' : ''}</option>` + values.map(v => `<option value="${escapeHtml(v)}">${v}</option>`).join('');
             if (values.includes(current)) select.value = current;
             else select.value = '__ALL__';
         }
