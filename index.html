@@ -366,7 +366,7 @@
     function renderTable() {
         const thead = document.getElementById('tableHeader');
         const tbody = document.getElementById('tableBody');
-        const cols = ['Psicólogo', 'Plana', 'Docente', 'Sede', 'Turno', 'Tipo Grado', 'Grado', 'Curso', 'Aula', 'P1', 'P2', 'P3', 'P4', 'Promedio', 'Nivel'];
+        const cols = ['Área', 'Plana', 'Docente', 'Sede', 'Turno', 'Tipo Grado', 'Grado', 'Curso', 'Aula', 'P1', 'P2', 'P3', 'P4', 'Promedio', 'Nivel'];
         thead.innerHTML = '<tr>' + cols.map(c => `<th>${c}</th>`).join('') + '</tr>';
         
         document.getElementById('totalRegistros').innerText = filteredData.length;
