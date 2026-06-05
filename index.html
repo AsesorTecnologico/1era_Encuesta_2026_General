@@ -373,7 +373,6 @@
         const promedio = filteredData.length ? (filteredData.reduce((a,b)=>a+b.promedio,0)/filteredData.length).toFixed(2) : "0.00";
         document.getElementById('kpiResumen').innerHTML = `
             <div class="kpi-mini-item"><span>📋 Evaluaciones</span><span>${total}</span></div>
-            <div class="kpi-mini-item"><span>👨‍🏫 Psicólogos</span><span>${psicologos}</span></div>
             <div class="kpi-mini-item"><span>⭐ Promedio global</span><span>${promedio}</span></div>
         `;
     }
