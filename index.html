@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Dashboard Psicólogos · Evaluación Docente</title>
+    <title>Dashboard 1er Encuesta Calificada de Docente</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -61,7 +61,7 @@
 <body>
 <div class="dashboard">
     <div class="header">
-        <h1><i class="fas fa-chalkboard-user"></i> Dashboard Psicólogos · Evaluación Docente</h1>
+        <h1><i class="fas fa-chalkboard-user"></i> Dashboard 1er Encuesta Calificada de Docente</h1>
         <div class="sub"><i class="fa-regular fa-diagram-project"></i> Filtros asociados: selecciona cualquier valor y los demás filtros se actualizan automáticamente</div>
     </div>
 
@@ -76,7 +76,7 @@
 
     <div class="filtros-avanzados">
         <div class="filtros-grid">
-            <div class="filtro-group"><label>🧠 Psicólogo</label><select id="filtroPsicologo"><option value="__ALL__">Todos</option></select></div>
+            <div class="filtro-group"><label>🧠 Área</label><select id="filtroPsicologo"><option value="__ALL__">Todos</option></select></div>
             <div class="filtro-group"><label>📚 Plana</label><select id="filtroPlana"><option value="__ALL__">Todas</option></select></div>
             <div class="filtro-group"><label>👨‍🏫 Docente</label><select id="filtroDocente"><option value="__ALL__">Todos</option></select></div>
             <div class="filtro-group"><label>🏫 Sede</label><select id="filtroSede"><option value="__ALL__">Todas</option></select></div>
@@ -93,7 +93,7 @@
 
     <div class="charts-grid">
         <div class="chart-card">
-            <div class="chart-title"><i class="fa-regular fa-chart-bar"></i> Promedio por Psicólogo</div>
+            <div class="chart-title"><i class="fa-regular fa-chart-bar"></i> Promedio por Área</div>
             <div class="chart-container"><canvas id="promedioPsicologoChart"></canvas></div>
         </div>
         <div class="chart-card">
